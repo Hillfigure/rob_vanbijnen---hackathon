@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"  class="form-background">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend | Contact</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo"><a href="index.html">Home</a></li>
+                    <li><a href="trackday.html">Trackday</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="form">
+            <h1>Contact</h1>
+            <form name="assignment_form" method="POST" data-netlify="true">
+                <label for="naam">Name</label>
+                <input class="contact_form" type="text" name="naam">
+                <label for="email">E-mail</label>
+                <input class="contact_form" type="email" name="email">
+                <label for="phone">Phone</label>
+                <input class="contact_form" type="tel" name="phone">
+                <label for="age">Age</label>
+                <input class="contact_form" type="number" name="age">
+                <label for="birthdate">Birthdate</label>
+                <input class="contact_form" type="date" name="birthdate">
+
+                <p>Gender</p>
+                <input type="radio" name="gender" value="male">
+                <label for="man">Male</label>
+                <input type="radio" name="gender" value="female">
+                <label for="woman">Female</label>
+                <input type="radio" name="gender" value="other">
+                <label for="other">Other</label>
+                <input type="radio" name="gender" value="none">
+                <label for="none">Prefer not to say</label><br>
+
+                <p>Select your favourite cartype(s)</p>
+                <p>
+                <input type="checkbox" name="cartype" value="hatchback"> Hatchback<br>
+                <input type="checkbox" name="cartype" value="coupe"> Coupe<br>
+                <input type="checkbox" name="cartype" value="saloon"> Saloon<br>
+                <input type="checkbox" name="cartype" value="suv"> SUV<br>
+                <input type="checkbox" name="cartype" value="sportscar"> Sportscar
+                </p>
+
+                <label for="color">Select your favourite color:</label>
+                <input class="contact_form" type="color" name="color" value="#e66465">
+                <label for="carpick">Upload a pic of your car:</label>
+                <input class="contact_form" type="file" name="carpick" accept="image/png, image/jpeg">
+                <label for="website">Website</label>
+                <input class="contact_form" type="url" name="website">
+                <label for="message">Write your message here:</label>
+                <textarea class="contact_form" rows="4" cols="35" name="message"></textarea>
+                <button type="reset" value="Reset">Reset</button>
+                <button type="submit" value="Send">Send</button>
+            </form>
+        </main>
+
+        <footer>Chamber of Commerce - Office Hours - Policy</footer>
+    </div>
+</body>
+</html>
